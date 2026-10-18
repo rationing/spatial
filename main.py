@@ -1,4 +1,4 @@
-print("Starting...")
+print("0")
 
 
-print("Done!")
+print("1")

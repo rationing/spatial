@@ -12,8 +12,12 @@ urlretrieve = urllib.request.urlretrieve(url)
 with zipfile.ZipFile(urlretrieve[0]) as zip:
 	zip.extractall()
 
+# Load the shapefile with pygeoda
 
+import pygeoda
 
+data = pygeoda.open("cb_2025_us_state_20m.shp")
+print(data)
 
 
 

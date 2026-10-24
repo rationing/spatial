@@ -6,7 +6,10 @@ complete these steps:
 - Install the latest version of Microsoft Visual C++ at
 https://visualstudio.microsoft.com/visual-cpp-build-tools
 
-- Install the latest version of pygeoda with
+- Install several Python libraries with
 ```
 pip install pygeoda
 ``` 
+
+- Learn about pygeoda at 
+https://github.com/GeoDaCenter/pygeoda

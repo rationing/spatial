@@ -12,12 +12,28 @@ urlretrieve = urllib.request.urlretrieve(url)
 with zipfile.ZipFile(urlretrieve[0]) as zip:
 	zip.extractall()
 
-# Load the shapefile with pygeoda
+# Load and visualize the shapefile with geopandas and matplotlib
+
+import geopandas
+import matplotlib.pyplot
+
+data = geopandas.read_file("cb_2025_us_state_20m.shp")
+
+# Remove Puerto Rico
+data = data.drop(index=24)
+
+# Remove Alaska
+data = data.drop(index=25)
+
+# Remove Hawaii
+data = data.drop(index=29)
+
+data.plot()
+matplotlib.pyplot.show()
+
+# Analyze the shapefile with additional data and pygeoda
 
 import pygeoda
-
-data = pygeoda.open("cb_2025_us_state_20m.shp")
-print(data)
 
 
 

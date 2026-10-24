@@ -8,7 +8,7 @@ https://visualstudio.microsoft.com/visual-cpp-build-tools
 
 - Install several Python libraries with
 ```
-pip install pygeoda
+pip install pygeoda geopandas matplotlib
 ``` 
 
 - Learn about pygeoda at 
